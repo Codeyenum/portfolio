@@ -73,7 +73,7 @@ body {
     height: 100vh;        
 }
 
-.banner--section h1 {
+h1 {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
@@ -120,12 +120,13 @@ body {
     margin: 2rem 0;
 }
 
-.skills--section h2 {    
+h2 {    
     font-family: 'DM Sans', sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
     align-self: flex-start;
     border-bottom: 2px solid rgb(212, 175, 55);  
+    margin-bottom: 1rem;
 }
 
 .skill-icon {
@@ -134,4 +135,98 @@ body {
 
 .skill--container {
     margin: 1rem 0;
+}
+
+.edu-cert--section {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 2rem;             
+}
+
+.edu-cert--titles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.edu-cert--titles h2 {
+    background-color: transparent;
+    border: none;    
+    cursor: pointer;    
+    font-size: 1.35rem;    
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.edu-cert--titles h2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: rgb(212, 175, 55);  
+    transition: .3s ease-in;  
+}
+
+.edu-cert--titles h2:hover:before {
+    width: 100%;
+    transition: .3s ease-in;
+}
+
+.edu-cert--titles h2.active{
+    color: rgb(212, 175, 55);  
+}
+
+.edu-cert--titles h2.active::before {  
+    background-color: #2D1E0F;  
+    width: 100%;
+    transition: .3s ease-in;  
+}
+
+/* .edu-cert--section h2:hover {
+    border-bottom: 2px solid rgb(212, 175, 55);  
+} */
+
+.qualifications--section {  
+    padding-left: 1rem;  
+    position: relative;
+    text-align: left;
+    width: 100%;    
+}
+
+.qualifications--section::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -8px;
+    height: 100%;
+    width: 1px;
+    background-color: rgb(212, 175, 55);
+}
+
+.qualifications--section h3 {
+    color: rgb(212, 175, 55);
+}
+
+.institute--container, .certificate--container {
+    margin: 1rem 0;
+    position: relative;
+}
+
+.institute--container::before, .certificate--container::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: -24px;
+    transform: translateX(-45%);
+    height: 12px;
+    width: 12px;
+    background-color: rgb(212, 175, 55);
+    border-radius: 50%;
+}
+
+.hide {
+    display: none;
+    /* transition: 1s ease-in;   */
 }
