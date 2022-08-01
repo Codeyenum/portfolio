@@ -24,7 +24,6 @@ body {
     justify-content: flex-end;
 
     background-color: rgba(255, 255, 255, 0.1);
-    /* border-bottom: 1px solid rgb(212, 175, 55);    */
     border-bottom: 1px solid black;
     list-style: none; 
     padding: .5rem 1.5rem;
