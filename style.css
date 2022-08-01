@@ -22,9 +22,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
+    backdrop-filter: blur(15px);
     background-color: rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(212, 175, 55);       
     list-style: none; 
     padding: .5rem 1.5rem;
     text-align: right;
@@ -38,6 +43,7 @@ body {
 }
 
 .menu_btn {
+    cursor: pointer;
     width: 50%;
 }
 
@@ -66,7 +72,8 @@ body {
 
 .profile--img {    
     border-radius: 50%;
-    border: 2px solid rgb(212, 175, 55);        
+    border: 2px solid rgb(212, 175, 55);   
+    margin-top: 3.5rem;     
     width: 80%;    
 }
 
