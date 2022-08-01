@@ -57,17 +57,20 @@ body {
     transform: translateX(50%);
 }
 
-.banner--section {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     
     border-bottom: 1px solid rgb(212, 175, 55);      
-    font-weight: 500;      
-    height: 100vh;    
+    font-weight: 500;
     padding: 0 1.5rem;
     text-align: center;
+}
+
+.banner--section {     
+    height: 100vh;        
 }
 
 .banner--section h1 {
@@ -110,16 +113,11 @@ body {
 }
 
 .skills--section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    
-    border-bottom: 1px solid rgb(212, 175, 55);      
-    font-weight: 500;      
-    height: 100vh;    
-    padding: 0 1.5rem;
-    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
+.skill-memoji {
+    margin: 2rem 0;
 }
 
 .skills--section h2 {    
@@ -132,4 +130,8 @@ body {
 
 .skill-icon {
     font-size: 2rem;
+}
+
+.skill--container {
+    margin: 1rem 0;
 }
