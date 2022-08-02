@@ -62,9 +62,9 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
-    border-bottom: 1px solid rgb(212, 175, 55);      
+        
     font-weight: 500;
+    margin-bottom: 1rem;
     padding: 0 1.5rem;
     text-align: center;
 }
@@ -112,6 +112,28 @@ h1 {
     color: rgb(212, 175, 55);
 }
 
+.bio--section {
+    text-align: left;    
+}
+
+.bio--section p {
+    margin: .75rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.bio--section p::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;    
+    height: 12px;
+    width: 12px;
+    background-color: rgb(212, 175, 55);
+    /* background-color: #2D1E0F; */
+    border-radius: 50%;
+}
+
 .skills--section {
     padding: 1rem 1.5rem;
 }
@@ -134,7 +156,34 @@ h2 {
 }
 
 .skill--container {
-    margin: 1rem 0;
+    margin: 1rem 0;    
+}
+
+.skill--container p {
+    margin: 1.25rem 0;
+    text-align: justify;
+}
+
+.progress--bar {
+    background-color: #2D1E0F;
+    border-radius: 5px;
+    height: 10px;    
+    width: 100%;    
+}
+
+.html--progress {
+    background-color: rgb(212, 175, 55);    
+    width: 85%; 
+}
+
+.css--progress {
+    background-color: rgb(212, 175, 55);    
+    width: 75%; 
+}
+
+.js--progress {
+    background-color: rgb(212, 175, 55);    
+    width: 65%; 
 }
 
 .edu-cert--section {
@@ -191,7 +240,7 @@ h2 {
 .qualifications--section {  
     padding-left: 1rem;  
     position: relative;
-    text-align: left;
+    text-align: left;    
     width: 100%;    
 }
 
@@ -211,7 +260,7 @@ h2 {
 
 .institute--container, .certificate--container {
     margin: 1rem 0;
-    position: relative;
+    position: relative;        
 }
 
 .institute--container::before, .certificate--container::before {
@@ -226,7 +275,6 @@ h2 {
     border-radius: 50%;
 }
 
-.hide {
-    display: none;
-    /* transition: 1s ease-in;   */
+.hide {  
+    display: none;        
 }
