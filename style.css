@@ -35,6 +35,7 @@ body {
     list-style: none; 
     padding: .5rem 1.5rem;
     text-align: right;
+    z-index: 2;
 }
 
 .logo {
@@ -156,7 +157,8 @@ h2 {
 }
 
 .skill--container {
-    margin: 1rem 0;    
+    margin: 1rem 0;  
+    width: 100%;  
 }
 
 .skill--container p {
