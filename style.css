@@ -177,6 +177,11 @@ h2 {
     padding: .25rem 1.25rem;
 }
 
+.skill--container img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 .skill--container p {
     margin: 0 0 0 .5rem;
 }
@@ -321,4 +326,12 @@ img {
 
 .hide {
     display: none;
+}
+
+.vs-code {
+    filter: invert(76%) sepia(67%) saturate(469%) hue-rotate(353deg) brightness(86%) contrast(93%);
+}
+
+.c-lang {    
+    filter: invert(78%) sepia(35%) saturate(931%) hue-rotate(358deg) brightness(93%) contrast(78%);
 }
